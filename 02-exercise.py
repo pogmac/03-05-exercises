@@ -1,7 +1,3 @@
-
-
-
-
 def build_bridge(chunk,goal):
     nchunk = 1
     nconnectors = 0
@@ -14,19 +10,19 @@ def build_bridge(chunk,goal):
         nchunk = nchunk + 1
         nconnectors = nconnectors +1
         if(bLength == goal):
-            print("Number of chunks = ", nchunk)
-            print("Number of connectors = ", nconnectors)
+            print("Number of chunks = ", nchunk , "chunks length = " , nchunk*chunk)
+            print("Number of connectors = ", nconnectors , "connectors length = " , nconnectors*chunk/2 )
             print("Bridge length = ", bLength)
             return True
         elif(bLength > goal):
-            print("Number of chunks = ", nchunk)
-            print("Number of connectors = ", nconnectors)
-            print("Bridge length = ", bLength)
+            print("Number of chunks = ", nchunk , "chunks length = " , nchunk*chunk)
+            print("Number of connectors = ", nconnectors , "connectors length = " , nconnectors*chunk/2 )
+            print("Bridge length = ", bLength, "instead of a length = ", goal)
             return False
         else:
             pass
     
-if (build_bridge(4,64)):
+if (build_bridge(5,65)):
     print("Success")
 else:
     print("Failure")    
