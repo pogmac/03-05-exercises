@@ -12,16 +12,3 @@ else:
 
 #2*6 + 1*5 = 17
 #18 +1 % 3 = 0 
-"""
-Rozważ taki kod:
-
-junction = chunk / 2
-
-Przyda się też:
-
-x = (goal + (junction * 1))/(chunk + junction)
-
-Co zwracamy?
-
-return True if x.is_integer() else False
-"""
